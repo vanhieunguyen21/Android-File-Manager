@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">File Manager</string>
+    <string name="confirm_grant_all_files_access">Grant access</string>
+    <string name="deny_grant_all_files_access">Deny</string>
+    <string name="prompt_grant_all_file_access">Application needs all file access permission.</string>
+    <string name="sort_type_name">Name</string>
+    <string name="sort_type_last_modified">Last Modified</string>
+    <string name="sort_type_size">Size</string>
+    <string name="empty_directory">Folder is empty!</string>
+</resources>
