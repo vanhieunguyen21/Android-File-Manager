@@ -10,6 +10,8 @@
 
 - Copy, move, delete, rename files and folders
 
+## Screenshots:
+
 <p align="left">
     <img src="screenshots/screenshots_2.jpg" width="300" height="600">
     <img src="screenshots/screenshots_3.jpg" width="300" height="600">
