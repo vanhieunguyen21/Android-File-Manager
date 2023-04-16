@@ -4,6 +4,12 @@
 - Sort by name, last modified time and size
 - Light/Dark theme
 
+## Compiled apk file (for convenience) at: /app/release/
+
+## Features to add:
+
+- Copy, move, delete, rename files and folders
+
 <p align="left">
     <img src="screenshots/screenshots_2.jpg" width="300" height="600">
     <img src="screenshots/screenshots_3.jpg" width="300" height="600">
