@@ -5,6 +5,10 @@ plugins {
     id 'com.google.dagger.hilt.android'
 }
 
+kotlin {
+    jvmToolchain(8)
+}
+
 android {
     namespace 'com.ryan.filemanager'
     compileSdk 33
@@ -39,7 +43,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.4.4'
+        kotlinCompilerExtensionVersion '1.4.5'
     }
     packagingOptions {
         resources {
