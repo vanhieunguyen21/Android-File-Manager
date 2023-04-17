@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ryan.filemanager.app.BaseApplication
 import com.ryan.filemanager.data.*
+import com.ryan.filemanager.data.repository.StorageRepository
 import com.ryan.filemanager.model.SortOrder
 import com.ryan.filemanager.model.SortType
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -144,7 +145,7 @@ class BrowserViewModel @Inject constructor(
         viewModelScope.launch { saveSortOrder(app, sortOrder) }
     }
 
-    fun toogleDarkTheme() {
+    fun toggleDarkTheme() {
         viewModelScope.launch { toggleDarkTheme(app) }
     }
 }

@@ -2,7 +2,6 @@ package com.ryan.filemanager.di
 
 import android.content.Context
 import com.ryan.filemanager.app.BaseApplication
-import com.ryan.filemanager.data.StorageRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

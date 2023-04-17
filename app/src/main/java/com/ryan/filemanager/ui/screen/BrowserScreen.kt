@@ -51,7 +51,7 @@ fun BrowserScreen(
                 }
             },
             menuButton = {
-                IconButton(onClick = { viewModel.toogleDarkTheme() }) {
+                IconButton(onClick = { viewModel.toggleDarkTheme() }) {
                     Icon(
                         painter = painterResource(id = R.drawable.ic_dark_mode),
                         contentDescription = null,

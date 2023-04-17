@@ -1,4 +1,4 @@
-package com.ryan.filemanager.data
+package com.ryan.filemanager.data.repository
 
 import androidx.core.content.ContextCompat
 import com.ryan.filemanager.app.BaseApplication

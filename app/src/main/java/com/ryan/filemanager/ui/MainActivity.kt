@@ -6,10 +6,9 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
+import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -18,17 +17,14 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
-import com.google.accompanist.permissions.rememberPermissionState
-import com.ryan.filemanager.MainActivityViewModel
 import com.ryan.filemanager.ui.theme.FileManagerTheme
 import com.ryan.filemanager.R
 import com.ryan.filemanager.ui.screen.BrowserScreen
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.HiltAndroidApp
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    val viewModel: MainActivityViewModel by viewModels()
+    private val viewModel: MainActivityViewModel by viewModels()
 
     // Legacy storage permissions for API < 30
     private val storagePermissions = listOf(
@@ -68,7 +64,10 @@ class MainActivity : ComponentActivity() {
                 permissions = storagePermissions,
                 onPermissionsResult = {
                     it.forEach { (_, granted) ->
-                        if (!granted) finish()
+                        if (!granted) {
+                            Toast.makeText(this, "Permissions not granted", Toast.LENGTH_SHORT).show()
+                            finish()
+                        }
                     }
                 }
             )

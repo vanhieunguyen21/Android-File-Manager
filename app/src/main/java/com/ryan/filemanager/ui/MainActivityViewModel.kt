@@ -1,4 +1,4 @@
-package com.ryan.filemanager
+package com.ryan.filemanager.ui
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
